@@ -1,0 +1,16 @@
+[project]
+name = "carl-generalization"
+version = "0.1.0"
+description = "CARL (state, goal) <-> action-sequence representation in two identical gridworlds with different state identities"
+requires-python = ">=3.12"
+dependencies = [
+  "jax",
+  "flax",
+  "optax",
+  "marimo",
+  "plotly",
+  "numpy",
+]
+
+[project.optional-dependencies]
+cuda = ["jax[cuda12]"]       # NVIDIA GPU; without it everything runs (more slowly) on the CPU
